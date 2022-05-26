@@ -70,7 +70,7 @@ if __name__ == '__main__':
     data = {}
     while 1:
         data['air_quality'] = get_air_quality()
-        data['humidity'], data['temperature'] = get_ht()
+        data['humidity'], data['temperature'] = get_dht()
         data['luminosity'] = get_luminosity()
         
         now = RTC().datetime()
